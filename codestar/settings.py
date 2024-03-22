@@ -89,6 +89,12 @@ DATABASES = {
     'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
 }
 
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://8000-antongustafs-sportsblog-4dbjyzlfo6v.ws-eu110.gitpod.io",
+    "https://sports-blog-project-da162bbd321b.herokuapp.com"
+]
+
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
 
